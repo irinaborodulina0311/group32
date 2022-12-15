@@ -1,0 +1,107 @@
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~
+$ pwd
+/c/Users/WebUser
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~
+$ mkdir test_2
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~
+$ cd test_2
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2
+$ mkdir p_1 p_2 p_3
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2
+$ cd p_1
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ touch 1.txt 2.txt 1.json 2.json 3.json
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ mkdir pp_1 pp_2 pp_3
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ ls -la
+total 4
+drwxr-xr-x 1 WebUser 197121 0 Dec  3 20:33 ./
+drwxr-xr-x 1 WebUser 197121 0 Dec  3 20:32 ../
+-rw-r--r-- 1 WebUser 197121 0 Dec  3 20:33 1.json
+-rw-r--r-- 1 WebUser 197121 0 Dec  3 20:33 1.txt
+-rw-r--r-- 1 WebUser 197121 0 Dec  3 20:33 2.json
+-rw-r--r-- 1 WebUser 197121 0 Dec  3 20:33 2.txt
+-rw-r--r-- 1 WebUser 197121 0 Dec  3 20:33 3.json
+drwxr-xr-x 1 WebUser 197121 0 Dec  3 20:33 pp_1/
+drwxr-xr-x 1 WebUser 197121 0 Dec  3 20:33 pp_2/
+drwxr-xr-x 1 WebUser 197121 0 Dec  3 20:33 pp_3/
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ cat>>1.txt
+row_1
+row_2
+row_3
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ vim 1.txt
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2
+$ cd p_1
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ ls -la
+total 5
+drwxr-xr-x 1 WebUser 197121  0 Dec  3 20:35 ./
+drwxr-xr-x 1 WebUser 197121  0 Dec  3 20:32 ../
+-rw-r--r-- 1 WebUser 197121  0 Dec  3 20:33 1.json
+-rw-r--r-- 1 WebUser 197121 36 Dec  3 20:35 1.txt
+-rw-r--r-- 1 WebUser 197121  0 Dec  3 20:33 2.json
+-rw-r--r-- 1 WebUser 197121  0 Dec  3 20:33 2.txt
+-rw-r--r-- 1 WebUser 197121  0 Dec  3 20:33 3.json
+drwxr-xr-x 1 WebUser 197121  0 Dec  3 20:33 pp_1/
+drwxr-xr-x 1 WebUser 197121  0 Dec  3 20:33 pp_2/
+drwxr-xr-x 1 WebUser 197121  0 Dec  3 20:33 pp_3/
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ mv 1.txt 2.json ../p_2
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ find . -name 1.txt
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ ls -RA
+.:
+1.json  2.txt  3.json  pp_1/  pp_2/  pp_3/
+
+./pp_1:
+
+./pp_2:
+
+./pp_3:
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ touch head.txt
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ cat>>head.txt
+Ira
+Iren
+Irina
+Iriska
+Irinka
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ head -n2 head.txt
+Ira
+Iren
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ tail -n3 head.txt
+Iren
+Irina
+Iriska
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$ date +"Today is: %A %d %B"
+Today is: Saturday 03 December
+
+WebUser@WIN-9RMHOJ5SLFM MINGW64 ~/test_2/p_1
+$
